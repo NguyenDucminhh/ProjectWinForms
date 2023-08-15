@@ -29,7 +29,18 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            label5 = new Label();
+            label4 = new Label();
+            txtDiaChi = new TextBox();
+            cbbTP = new ComboBox();
+            txtDC = new TextBox();
+            txtCty = new TextBox();
+            txtMaKH = new TextBox();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
             panel2 = new Panel();
+            dgvKhachHang = new DataGridView();
             btnReload = new Button();
             btnThem = new Button();
             btnSua = new Button();
@@ -37,31 +48,20 @@
             btnHuy = new Button();
             btnXoa = new Button();
             btnTrove = new Button();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            comboBox1 = new ComboBox();
-            textBox4 = new TextBox();
-            label4 = new Label();
-            label5 = new Label();
-            dataGridView1 = new DataGridView();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvKhachHang).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label4);
-            panel1.Controls.Add(textBox4);
-            panel1.Controls.Add(comboBox1);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(txtDiaChi);
+            panel1.Controls.Add(cbbTP);
+            panel1.Controls.Add(txtDC);
+            panel1.Controls.Add(txtCty);
+            panel1.Controls.Add(txtMaKH);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
@@ -70,13 +70,108 @@
             panel1.Size = new Size(719, 111);
             panel1.TabIndex = 0;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(495, 54);
+            label5.Name = "label5";
+            label5.Size = new Size(37, 21);
+            label5.TabIndex = 9;
+            label5.Text = "SDT";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(495, 10);
+            label4.Name = "label4";
+            label4.Size = new Size(60, 21);
+            label4.TabIndex = 8;
+            label4.Text = "Đia Chi";
+            // 
+            // txtDiaChi
+            // 
+            txtDiaChi.Location = new Point(570, 52);
+            txtDiaChi.Name = "txtDiaChi";
+            txtDiaChi.Size = new Size(121, 23);
+            txtDiaChi.TabIndex = 7;
+            // 
+            // cbbTP
+            // 
+            cbbTP.FormattingEnabled = true;
+            cbbTP.Location = new Point(570, 12);
+            cbbTP.Name = "cbbTP";
+            cbbTP.Size = new Size(121, 23);
+            cbbTP.TabIndex = 6;
+            // 
+            // txtDC
+            // 
+            txtDC.Location = new Point(101, 81);
+            txtDC.Name = "txtDC";
+            txtDC.Size = new Size(222, 23);
+            txtDC.TabIndex = 5;
+            // 
+            // txtCty
+            // 
+            txtCty.Location = new Point(101, 50);
+            txtCty.Name = "txtCty";
+            txtCty.Size = new Size(222, 23);
+            txtCty.TabIndex = 4;
+            // 
+            // txtMaKH
+            // 
+            txtMaKH.Location = new Point(100, 15);
+            txtMaKH.Name = "txtMaKH";
+            txtMaKH.Size = new Size(222, 23);
+            txtMaKH.TabIndex = 3;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(26, 81);
+            label3.Name = "label3";
+            label3.Size = new Size(60, 21);
+            label3.TabIndex = 2;
+            label3.Text = "Địa Chỉ";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(26, 48);
+            label2.Name = "label2";
+            label2.Size = new Size(60, 21);
+            label2.TabIndex = 1;
+            label2.Text = "Tên Cty";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(26, 14);
+            label1.Name = "label1";
+            label1.Size = new Size(56, 21);
+            label1.TabIndex = 0;
+            label1.Text = "Mã KH";
+            // 
             // panel2
             // 
-            panel2.Controls.Add(dataGridView1);
+            panel2.Controls.Add(dgvKhachHang);
             panel2.Location = new Point(42, 139);
             panel2.Name = "panel2";
             panel2.Size = new Size(719, 228);
             panel2.TabIndex = 1;
+            // 
+            // dgvKhachHang
+            // 
+            dgvKhachHang.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvKhachHang.Location = new Point(26, 14);
+            dgvKhachHang.Name = "dgvKhachHang";
+            dgvKhachHang.RowTemplate.Height = 25;
+            dgvKhachHang.Size = new Size(693, 211);
+            dgvKhachHang.TabIndex = 0;
             // 
             // btnReload
             // 
@@ -141,101 +236,6 @@
             btnTrove.Text = "Trở về";
             btnTrove.UseVisualStyleBackColor = true;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(26, 14);
-            label1.Name = "label1";
-            label1.Size = new Size(56, 21);
-            label1.TabIndex = 0;
-            label1.Text = "Mã KH";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(26, 48);
-            label2.Name = "label2";
-            label2.Size = new Size(60, 21);
-            label2.TabIndex = 1;
-            label2.Text = "Tên Cty";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(26, 81);
-            label3.Name = "label3";
-            label3.Size = new Size(60, 21);
-            label3.TabIndex = 2;
-            label3.Text = "Địa Chỉ";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(100, 15);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(222, 23);
-            textBox1.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(101, 50);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(222, 23);
-            textBox2.TabIndex = 4;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(101, 81);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(222, 23);
-            textBox3.TabIndex = 5;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(570, 12);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 6;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(570, 52);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(121, 23);
-            textBox4.TabIndex = 7;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(495, 10);
-            label4.Name = "label4";
-            label4.Size = new Size(60, 21);
-            label4.TabIndex = 8;
-            label4.Text = "Đia Chi";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(495, 54);
-            label5.Name = "label5";
-            label5.Size = new Size(37, 21);
-            label5.TabIndex = 9;
-            label5.Text = "SDT";
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(26, 14);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(693, 211);
-            dataGridView1.TabIndex = 0;
-            // 
             // KhachHangForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -252,10 +252,11 @@
             Controls.Add(panel1);
             Name = "KhachHangForm";
             Text = "Quản Lý Danh Mục Khách Hàng";
+            Load += KhachHangForm_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvKhachHang).EndInit();
             ResumeLayout(false);
         }
 
@@ -270,16 +271,16 @@
         private Button btnHuy;
         private Button btnXoa;
         private Button btnTrove;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtDC;
+        private TextBox txtCty;
+        private TextBox txtMaKH;
         private Label label3;
         private Label label2;
         private Label label1;
         private Label label5;
         private Label label4;
-        private TextBox textBox4;
-        private ComboBox comboBox1;
-        private DataGridView dataGridView1;
+        private TextBox txtDiaChi;
+        private ComboBox cbbTP;
+        private DataGridView dgvKhachHang;
     }
 }
