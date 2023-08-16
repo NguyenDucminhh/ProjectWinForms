@@ -31,9 +31,9 @@
             panel1 = new Panel();
             label5 = new Label();
             label4 = new Label();
-            txtDiaChi = new TextBox();
+            txtSDT = new TextBox();
             cbbTP = new ComboBox();
-            txtDC = new TextBox();
+            txtDiaChi = new TextBox();
             txtCty = new TextBox();
             txtMaKH = new TextBox();
             label3 = new Label();
@@ -57,9 +57,9 @@
             // 
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label4);
-            panel1.Controls.Add(txtDiaChi);
+            panel1.Controls.Add(txtSDT);
             panel1.Controls.Add(cbbTP);
-            panel1.Controls.Add(txtDC);
+            panel1.Controls.Add(txtDiaChi);
             panel1.Controls.Add(txtCty);
             panel1.Controls.Add(txtMaKH);
             panel1.Controls.Add(label3);
@@ -90,12 +90,12 @@
             label4.TabIndex = 8;
             label4.Text = "Đia Chi";
             // 
-            // txtDiaChi
+            // txtSDT
             // 
-            txtDiaChi.Location = new Point(570, 52);
-            txtDiaChi.Name = "txtDiaChi";
-            txtDiaChi.Size = new Size(121, 23);
-            txtDiaChi.TabIndex = 7;
+            txtSDT.Location = new Point(570, 52);
+            txtSDT.Name = "txtSDT";
+            txtSDT.Size = new Size(121, 23);
+            txtSDT.TabIndex = 7;
             // 
             // cbbTP
             // 
@@ -105,12 +105,12 @@
             cbbTP.Size = new Size(121, 23);
             cbbTP.TabIndex = 6;
             // 
-            // txtDC
+            // txtDiaChi
             // 
-            txtDC.Location = new Point(101, 81);
-            txtDC.Name = "txtDC";
-            txtDC.Size = new Size(222, 23);
-            txtDC.TabIndex = 5;
+            txtDiaChi.Location = new Point(101, 81);
+            txtDiaChi.Name = "txtDiaChi";
+            txtDiaChi.Size = new Size(222, 23);
+            txtDiaChi.TabIndex = 5;
             // 
             // txtCty
             // 
@@ -167,10 +167,10 @@
             // dgvKhachHang
             // 
             dgvKhachHang.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvKhachHang.Location = new Point(26, 14);
+            dgvKhachHang.Location = new Point(68, 0);
             dgvKhachHang.Name = "dgvKhachHang";
             dgvKhachHang.RowTemplate.Height = 25;
-            dgvKhachHang.Size = new Size(693, 211);
+            dgvKhachHang.Size = new Size(541, 203);
             dgvKhachHang.TabIndex = 0;
             // 
             // btnReload
@@ -181,6 +181,7 @@
             btnReload.TabIndex = 2;
             btnReload.Text = "Reload";
             btnReload.UseVisualStyleBackColor = true;
+            btnReload.Click += btnReload_Click;
             // 
             // btnThem
             // 
@@ -190,6 +191,7 @@
             btnThem.TabIndex = 3;
             btnThem.Text = "Thêm";
             btnThem.UseVisualStyleBackColor = true;
+            btnThem.Click += btnThem_Click;
             // 
             // btnSua
             // 
@@ -199,6 +201,7 @@
             btnSua.TabIndex = 4;
             btnSua.Text = "Sửa";
             btnSua.UseVisualStyleBackColor = true;
+            btnSua.Click += btnSua_Click;
             // 
             // btnLuu
             // 
@@ -208,6 +211,7 @@
             btnLuu.TabIndex = 5;
             btnLuu.Text = "Lưu";
             btnLuu.UseVisualStyleBackColor = true;
+            btnLuu.Click += btnLuu_Click;
             // 
             // btnHuy
             // 
@@ -217,6 +221,7 @@
             btnHuy.TabIndex = 6;
             btnHuy.Text = "Hủy bỏ";
             btnHuy.UseVisualStyleBackColor = true;
+            btnHuy.Click += btnHuy_Click;
             // 
             // btnXoa
             // 
@@ -226,6 +231,7 @@
             btnXoa.TabIndex = 7;
             btnXoa.Text = "Xóa";
             btnXoa.UseVisualStyleBackColor = true;
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnTrove
             // 
@@ -235,6 +241,7 @@
             btnTrove.TabIndex = 8;
             btnTrove.Text = "Trở về";
             btnTrove.UseVisualStyleBackColor = true;
+            btnTrove.Click += btnTrove_Click;
             // 
             // KhachHangForm
             // 
@@ -271,7 +278,7 @@
         private Button btnHuy;
         private Button btnXoa;
         private Button btnTrove;
-        private TextBox txtDC;
+        private TextBox txtDiaChi;
         private TextBox txtCty;
         private TextBox txtMaKH;
         private Label label3;
@@ -279,7 +286,7 @@
         private Label label1;
         private Label label5;
         private Label label4;
-        private TextBox txtDiaChi;
+        private TextBox txtSDT;
         private ComboBox cbbTP;
         private DataGridView dgvKhachHang;
     }

@@ -11,6 +11,7 @@ namespace ProjectWinForms
 {
     internal class DataBaseManager
     {
+        // kết nối csdl 
       private static  string connectionString = "Data Source=DESKTOP-FILOATR\\SQLEXPRESS;Initial Catalog=QuanLyBanHang;User ID=sa;Password=123";
         public static SqlConnection GetConnection()
         {
@@ -26,6 +27,19 @@ namespace ProjectWinForms
                     DataTable result = new DataTable();
                     adapter.Fill(result);
                     return result;
+                }
+            }
+        }
+
+        //tạo câu lệnh truy vấn thêm sửa xóa
+        public static int ExecuteNonQuery(string query)
+        {
+            using(SqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                using(SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    return cmd.ExecuteNonQuery();
                 }
             }
         }

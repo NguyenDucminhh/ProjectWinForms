@@ -35,7 +35,9 @@
 
         private void danhMụcNhânVIênToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            NhanVienForm nv = new NhanVienForm();
+            nv.Text = "Quản lý danh mục nhân viên";
+            nv.ShowDialog();
         }
 
         private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)

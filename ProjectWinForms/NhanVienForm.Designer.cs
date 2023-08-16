@@ -29,18 +29,20 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            label5 = new Label();
-            label4 = new Label();
-            textBox4 = new TextBox();
-            comboBox1 = new ComboBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            label3 = new Label();
+            cbNu = new CheckBox();
+            label6 = new Label();
+            txtDiaChi = new TextBox();
             label2 = new Label();
+            label5 = new Label();
+            txtSDT = new TextBox();
+            txtTen = new TextBox();
+            txtHo = new TextBox();
+            txtMaNV = new TextBox();
+            label3 = new Label();
+            txtHoaaa = new Label();
             label1 = new Label();
             panel2 = new Panel();
-            dataGridView1 = new DataGridView();
+            dgvNhanVien = new DataGridView();
             btnTrove = new Button();
             btnXoa = new Button();
             btnHuy = new Button();
@@ -48,83 +50,107 @@
             btnSua = new Button();
             btnThem = new Button();
             btnReload = new Button();
+            dtpNgayNV = new DateTimePicker();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvNhanVien).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(textBox4);
-            panel1.Controls.Add(comboBox1);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(textBox1);
-            panel1.Controls.Add(label3);
+            panel1.Controls.Add(dtpNgayNV);
+            panel1.Controls.Add(cbNu);
+            panel1.Controls.Add(label6);
+            panel1.Controls.Add(txtDiaChi);
             panel1.Controls.Add(label2);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(txtSDT);
+            panel1.Controls.Add(txtTen);
+            panel1.Controls.Add(txtHo);
+            panel1.Controls.Add(txtMaNV);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(txtHoaaa);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(31, 31);
             panel1.Name = "panel1";
             panel1.Size = new Size(719, 111);
             panel1.TabIndex = 1;
             // 
+            // cbNu
+            // 
+            cbNu.AutoSize = true;
+            cbNu.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            cbNu.Location = new Point(349, 8);
+            cbNu.Name = "cbNu";
+            cbNu.Size = new Size(50, 25);
+            cbNu.TabIndex = 14;
+            cbNu.Text = "Nữ";
+            cbNu.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(260, 46);
+            label6.Name = "label6";
+            label6.Size = new Size(73, 21);
+            label6.TabIndex = 12;
+            label6.Text = "Ngày NV";
+            // 
+            // txtDiaChi
+            // 
+            txtDiaChi.Location = new Point(349, 83);
+            txtDiaChi.Name = "txtDiaChi";
+            txtDiaChi.Size = new Size(149, 23);
+            txtDiaChi.TabIndex = 11;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(260, 81);
+            label2.Name = "label2";
+            label2.Size = new Size(60, 21);
+            label2.TabIndex = 10;
+            label2.Text = "Địa Chỉ";
+            // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(495, 54);
+            label5.Location = new Point(510, 12);
             label5.Name = "label5";
             label5.Size = new Size(37, 21);
             label5.TabIndex = 9;
             label5.Text = "SDT";
             // 
-            // label4
+            // txtSDT
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(495, 10);
-            label4.Name = "label4";
-            label4.Size = new Size(60, 21);
-            label4.TabIndex = 8;
-            label4.Text = "Đia Chi";
+            txtSDT.Location = new Point(563, 12);
+            txtSDT.Name = "txtSDT";
+            txtSDT.Size = new Size(141, 23);
+            txtSDT.TabIndex = 7;
             // 
-            // textBox4
+            // txtTen
             // 
-            textBox4.Location = new Point(570, 52);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(121, 23);
-            textBox4.TabIndex = 7;
+            txtTen.Location = new Point(101, 81);
+            txtTen.Name = "txtTen";
+            txtTen.Size = new Size(134, 23);
+            txtTen.TabIndex = 5;
             // 
-            // comboBox1
+            // txtHo
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(570, 12);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 6;
+            txtHo.Location = new Point(101, 50);
+            txtHo.Name = "txtHo";
+            txtHo.Size = new Size(134, 23);
+            txtHo.TabIndex = 4;
             // 
-            // textBox3
+            // txtMaNV
             // 
-            textBox3.Location = new Point(101, 81);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(222, 23);
-            textBox3.TabIndex = 5;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(101, 50);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(222, 23);
-            textBox2.TabIndex = 4;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(100, 15);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(222, 23);
-            textBox1.TabIndex = 3;
+            txtMaNV.Location = new Point(100, 15);
+            txtMaNV.Name = "txtMaNV";
+            txtMaNV.Size = new Size(88, 23);
+            txtMaNV.TabIndex = 3;
             // 
             // label3
             // 
@@ -132,19 +158,19 @@
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(26, 81);
             label3.Name = "label3";
-            label3.Size = new Size(60, 21);
+            label3.Size = new Size(33, 21);
             label3.TabIndex = 2;
-            label3.Text = "Địa Chỉ";
+            label3.Text = "Tên";
             // 
-            // label2
+            // txtHoaaa
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(26, 48);
-            label2.Name = "label2";
-            label2.Size = new Size(60, 21);
-            label2.TabIndex = 1;
-            label2.Text = "Tên Cty";
+            txtHoaaa.AutoSize = true;
+            txtHoaaa.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtHoaaa.Location = new Point(26, 48);
+            txtHoaaa.Name = "txtHoaaa";
+            txtHoaaa.Size = new Size(56, 21);
+            txtHoaaa.TabIndex = 1;
+            txtHoaaa.Text = "Họ Lót";
             // 
             // label1
             // 
@@ -152,26 +178,26 @@
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(26, 14);
             label1.Name = "label1";
-            label1.Size = new Size(56, 21);
+            label1.Size = new Size(58, 21);
             label1.TabIndex = 0;
-            label1.Text = "Mã KH";
+            label1.Text = "Mã NV";
             // 
             // panel2
             // 
-            panel2.Controls.Add(dataGridView1);
+            panel2.Controls.Add(dgvNhanVien);
             panel2.Location = new Point(31, 148);
             panel2.Name = "panel2";
             panel2.Size = new Size(719, 228);
             panel2.TabIndex = 2;
             // 
-            // dataGridView1
+            // dgvNhanVien
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(719, 225);
-            dataGridView1.TabIndex = 0;
+            dgvNhanVien.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvNhanVien.Location = new Point(0, 0);
+            dgvNhanVien.Name = "dgvNhanVien";
+            dgvNhanVien.RowTemplate.Height = 25;
+            dgvNhanVien.Size = new Size(719, 228);
+            dgvNhanVien.TabIndex = 0;
             // 
             // btnTrove
             // 
@@ -181,6 +207,7 @@
             btnTrove.TabIndex = 15;
             btnTrove.Text = "Trở về";
             btnTrove.UseVisualStyleBackColor = true;
+            btnTrove.Click += btnTrove_Click;
             // 
             // btnXoa
             // 
@@ -190,6 +217,7 @@
             btnXoa.TabIndex = 14;
             btnXoa.Text = "Xóa";
             btnXoa.UseVisualStyleBackColor = true;
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnHuy
             // 
@@ -199,6 +227,7 @@
             btnHuy.TabIndex = 13;
             btnHuy.Text = "Hủy bỏ";
             btnHuy.UseVisualStyleBackColor = true;
+            btnHuy.Click += btnHuy_Click;
             // 
             // btnLuu
             // 
@@ -208,6 +237,7 @@
             btnLuu.TabIndex = 12;
             btnLuu.Text = "Lưu";
             btnLuu.UseVisualStyleBackColor = true;
+            btnLuu.Click += btnLuu_Click;
             // 
             // btnSua
             // 
@@ -217,6 +247,7 @@
             btnSua.TabIndex = 11;
             btnSua.Text = "Sửa";
             btnSua.UseVisualStyleBackColor = true;
+            btnSua.Click += btnSua_Click;
             // 
             // btnThem
             // 
@@ -226,6 +257,7 @@
             btnThem.TabIndex = 10;
             btnThem.Text = "Thêm";
             btnThem.UseVisualStyleBackColor = true;
+            btnThem.Click += btnThem_Click;
             // 
             // btnReload
             // 
@@ -235,6 +267,14 @@
             btnReload.TabIndex = 9;
             btnReload.Text = "Reload";
             btnReload.UseVisualStyleBackColor = true;
+            btnReload.Click += btnReload_Click;
+            // 
+            // dtpNgayNV
+            // 
+            dtpNgayNV.Location = new Point(349, 48);
+            dtpNgayNV.Name = "dtpNgayNV";
+            dtpNgayNV.Size = new Size(149, 23);
+            dtpNgayNV.TabIndex = 15;
             // 
             // NhanVienForm
             // 
@@ -252,10 +292,11 @@
             Controls.Add(panel1);
             Name = "NhanVienForm";
             Text = "Quản Lý Danh Mục Nhân Viên";
+            Load += NhanVienForm_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvNhanVien).EndInit();
             ResumeLayout(false);
         }
 
@@ -263,17 +304,15 @@
 
         private Panel panel1;
         private Label label5;
-        private Label label4;
-        private TextBox textBox4;
-        private ComboBox comboBox1;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtSDT;
+        private TextBox txtTen;
+        private TextBox txtHo;
+        private TextBox txtMaNV;
         private Label label3;
-        private Label label2;
+        private Label txtHoaaa;
         private Label label1;
         private Panel panel2;
-        private DataGridView dataGridView1;
+        private DataGridView dgvNhanVien;
         private Button btnTrove;
         private Button btnXoa;
         private Button btnHuy;
@@ -281,5 +320,10 @@
         private Button btnSua;
         private Button btnThem;
         private Button btnReload;
+        private CheckBox cbNu;
+        private Label label6;
+        private TextBox txtDiaChi;
+        private Label label2;
+        private DateTimePicker dtpNgayNV;
     }
 }
